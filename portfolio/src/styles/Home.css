@@ -1,6 +1,5 @@
 .home-hero {
     height: 100vh;
-    padding: 0px 0px 60px 0px;
     position: relative;
     background-image: linear-gradient(rgba(242, 242, 242, 0.686), rgba(242, 242, 242, 0.786)), url(../img/dotted.jpg);
     background-repeat: no-repeat;
@@ -20,7 +19,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 999;
-    padding: 0px 50px;
+    padding-left: 25px;
 }
 
 
@@ -190,7 +189,7 @@
 
 .home-section-1 .btn {
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: center;
     gap: 5px;
     font-weight: 600;
@@ -241,7 +240,7 @@
 
 .home-section-2 .section-b .btn {
     display: flex;
-    align-content: center;
+    align-items: center;
     gap: 5px;
     font-weight: 600;
     width: 30%;
@@ -251,4 +250,71 @@
     position: relative;
     right: -3px;
     font-weight: bold;
+}
+
+
+@media (max-width: 767px) {
+    .home-hero {
+        height: 90vh;
+    }
+
+    .home-main-hero {
+        top: 55%;
+        left: 50%;
+    }
+
+    .home-main-hero span {
+        font-size: clamp(3rem, 10vw + 1rem, 13rem);
+    }
+
+    .home-main-hero .home-hero-2 {
+        top: 100%;
+        left: 75%;
+    }
+
+    .home-section-1 {
+        padding: 30px;
+    }
+
+    .home-section-1 .section-1-p {
+        margin-left: 0px;
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .home-section-1 #container,
+    .home-section-2 .section-a,
+    .home-section-2 .section-b {
+        width: 100%;
+    }
+
+    .home-section-1 .btn,
+    .home-section-2 .section-b .btn {
+        width: 70%;
+    }
+
+    .home-section-2 {
+        padding: 30px;
+        height: auto;
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 290px) {
+    .home-main-hero span {
+        font-size: 2.5rem;
+    }
+
+    .home-main-hero {
+        padding-left: 10px
+    }
+
+    .home-main-hero .home-hero-2 {
+        left: 70%;
+    }
+
+    nav .nav-holder-1 .logo span {
+        font-size: 20px;
+    }
 }
