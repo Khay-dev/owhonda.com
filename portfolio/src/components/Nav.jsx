@@ -19,19 +19,40 @@ const Nav = () => {
         setIsOpen(!isOpen);
     };
     const { pathname: activePage } = useLocation();
-
     return (
-        <nav
-            style={{
-                opacity: scrollPosition > 250 ? "1" : "0",
-                transition: "opacity 1s ",
-            }}
-        >
+        <nav>
             <div className="nav-holder-1">
-                <Link to="/">
+                <Link
+                    to="/"
+                    className=" logos logo-1"
+                    style={{
+                        transform:
+                            scrollPosition > 250
+                                ? "translate(0px, -103px)"
+                                : "translate(0px, 0px)",
+                        transition: "transform 1s ",
+                    }}
+                >
                     <div className="logo">
                         <span>OW</span>
                         <span>HONDA</span>
+                        <span>.COM</span>
+                    </div>
+                </Link>
+                <Link
+                    to="/"
+                    className=" logos logo-2"
+                    style={{
+                        transform:
+                            scrollPosition > 250
+                                ? "translate(0px, -103px)"
+                                : "translate(0px, 0px)",
+                        transition: "transform 1s ",
+                    }}
+                >
+                    <div className="logo">
+                        <span>DA</span>
+                        <span>NIEL</span>
                         <span>.COM</span>
                     </div>
                 </Link>
@@ -43,7 +64,7 @@ const Nav = () => {
                 <ul>
                     <Link to="/Work">
                         <li className={activePage === "/Work" ? "active" : ""}>
-                            Works
+                            Work
                         </li>
                     </Link>
                     <Link to="/about">

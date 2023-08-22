@@ -104,7 +104,7 @@ const Home = () => {
                             <img src={work.image} alt="pics" />
                             <div className="text">
                                 <p className="main-text">{work.client}</p>
-                                <p>{work.type}</p>
+                                <p className="">{work.type}</p>
                             </div>
                         </div>
                     ))}
@@ -119,9 +119,9 @@ const Home = () => {
             <section className="home-section-2">
                 <div className="section-a">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Exercitationem quam velit cumque sint, ipsa voluptatum
-                        odit veritatis
+                        Lorem ipsum dolor sit amet consectetur elit.
+                         quam velit cumque sint, ipsa voluptatum
+                        odit veritatis lorem lorem 
                     </p>
                 </div>
                 <div className="section-b">

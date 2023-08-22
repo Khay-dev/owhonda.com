@@ -1,16 +1,16 @@
 nav {
     display: flex;
     width: 100%;
-    align-items: center;
+    align-items: start;
     justify-content: space-between;
-    padding: 15px 30px;
+    padding: 24px 30px;
     color: #000;
-    background-color: #fff;
+    background-color: transparent;
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
-    z-index: 99999;
+    z-index: 1009;
 
 }
 
@@ -22,14 +22,26 @@ nav .nav-holder-1 .logo {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 50%;
-
 
 }
 
+nav .nav-holder-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 110px;
+    overflow: hidden;
+    height: 83px;
+}
+
+nav .nav-holder-1 .logos {
+    flex-shrink: 0;
+    margin-bottom: 35px;
+}
+
 nav .nav-holder-1 .logo span {
-    font-weight: bold;
-    font-size: 29px;
+    font-weight: 900;
+    font-size: 20px;
     line-height: 1;
 }
 
@@ -45,13 +57,36 @@ nav .nav-holder-1 .logo span {
     gap: 30px;
     align-items: center;
     list-style: none;
-    font-size: 15px
+    font-size: 12px
+}
+
+.nav-holder-2 ul li {
+    display: inline-block;
+    position: relative;
+    padding: 5px 0px;
+}
+
+.nav-holder-2 ul li::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.nav-holder-2 ul li:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 .nav-holder-2 ul li:hover {
-    border-bottom: 1px solid #000;
-    padding: 10px 0px;
-    transition: all 100ms ease-in;
+    opacity: 0.5;
+    transition: all 200ms ease-in;
 }
 
 .active {
@@ -133,4 +168,7 @@ nav .nav-holder-1 .logo span {
         font-size: 25px;
     }
 
+    nav .nav-holder-1 .logos {
+        margin-bottom: 20px;
+    }
 }

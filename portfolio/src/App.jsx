@@ -4,7 +4,6 @@ import Work from "./pages/Work";
 import Contact from "./pages/Contact";
 import ScrollToTop from "./components/Scroll";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
 import "./index.css";
 
 function App() {
