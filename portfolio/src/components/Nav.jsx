@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
-import { HiMenuAlt1, HiX } from "react-icons/hi";
+import { HiX } from "react-icons/hi";
+import { BsArrowUpRight } from "react-icons/bs";
+import { CiMenuFries } from "react-icons/ci";
 import { Link, useLocation } from "react-router-dom";
 import "./Nav.css";
 const Nav = () => {
@@ -27,10 +29,10 @@ const Nav = () => {
                     className=" logos logo-1"
                     style={{
                         transform:
-                            scrollPosition > 250
+                            scrollPosition > 150
                                 ? "translate(0px, -103px)"
                                 : "translate(0px, 0px)",
-                        transition: "transform 1s ",
+                        transition: "transform 200ms ",
                     }}
                 >
                     <div className="logo">
@@ -44,10 +46,10 @@ const Nav = () => {
                     className=" logos logo-2"
                     style={{
                         transform:
-                            scrollPosition > 250
+                            scrollPosition > 150
                                 ? "translate(0px, -103px)"
                                 : "translate(0px, 0px)",
-                        transition: "transform 1s ",
+                        transition: "transform 200ms ",
                     }}
                 >
                     <div className="logo">
@@ -57,10 +59,12 @@ const Nav = () => {
                     </div>
                 </Link>
             </div>
+
             <div className={`nav-holder-2 ${isOpen ? "is-active" : ""}`}>
                 <div className="navbar-close" onClick={toggleNavbar}>
                     <HiX />
                 </div>
+
                 <ul>
                     <Link to="/Work">
                         <li className={activePage === "/Work" ? "active" : ""}>
@@ -81,13 +85,72 @@ const Nav = () => {
                             Contact
                         </li>
                     </Link>
+
+                    <a href="www.linkedin.com" className="link">
+                        {" "}
+                        <li>LinkedIn</li>
+                        <BsArrowUpRight />
+                    </a>
                 </ul>
             </div>
-            <div
-                className={`nav-holder-3 ${isOpen ? "is-active" : ""}`}
-                onClick={toggleNavbar}
-            >
-                {isOpen ? <HiX /> : <HiMenuAlt1 />}
+
+            <div className="main-nav">
+                <div
+                    className="container"
+                    style={{
+                        transform:
+                            scrollPosition > 150
+                                ? "translate(0px, -103px)"
+                                : "translate(0px, 0px)",
+                        transition: "transform 200ms ",
+                    }}
+                >
+                    <ul>
+                        <Link to="/Work">
+                            <li
+                                className={
+                                    activePage === "/Work" ? "active" : ""
+                                }
+                            >
+                                Work
+                            </li>
+                        </Link>
+                        <Link to="/about">
+                            <li
+                                className={
+                                    activePage === "/about" ? "active" : ""
+                                }
+                            >
+                                About Us
+                            </li>
+                        </Link>
+                        <Link to="/contact">
+                            <li
+                                className={
+                                    activePage === "/contact" ? "active" : ""
+                                }
+                            >
+                                Contact
+                            </li>
+                        </Link>
+                    </ul>
+                </div>
+                <div
+                    className="navholder-4"
+                    style={{
+                        background: scrollPosition > 150 ? "#fff" : "",
+                        borderRadius: "40px ",
+                        padding: "9px 14px ",
+                    }}
+                >
+                    <a href="www.linkedin.com">LinkedIn</a>
+                    <div
+                        className={`nav-holder-3 ${isOpen ? "is-active" : ""}`}
+                        onClick={toggleNavbar}
+                    >
+                        {isOpen ? <HiX /> : <CiMenuFries />}
+                    </div>
+                </div>
             </div>
         </nav>
     );

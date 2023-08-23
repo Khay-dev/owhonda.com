@@ -3,7 +3,7 @@ nav {
     width: 100%;
     align-items: start;
     justify-content: space-between;
-    padding: 24px 30px;
+    padding: 24px;
     color: #000;
     background-color: transparent;
     position: fixed;
@@ -11,14 +11,9 @@ nav {
     right: 0;
     left: 0;
     z-index: 1009;
-
 }
 
 nav .nav-holder-1 .logo {
-    /* background-image: url(../img/logo.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain; */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -45,28 +40,15 @@ nav .nav-holder-1 .logo span {
     line-height: 1;
 }
 
-.nav-holder-2 {
-    display: flex;
-    flex-direction: row;
-    width: 50%;
-    justify-content: end;
-}
-
-.nav-holder-2 ul {
-    display: flex;
-    gap: 30px;
-    align-items: center;
-    list-style: none;
-    font-size: 12px
-}
-
-.nav-holder-2 ul li {
+.nav-holder-2 ul li,
+.main-nav .container ul li {
     display: inline-block;
     position: relative;
     padding: 5px 0px;
 }
 
-.nav-holder-2 ul li::after {
+.nav-holder-2 ul li::after,
+.main-nav .container ul li::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -79,12 +61,14 @@ nav .nav-holder-1 .logo span {
     transition: transform 0.25s ease-out;
 }
 
-.nav-holder-2 ul li:hover::after {
+.nav-holder-2 ul li:hover::after,
+nav .main-nav .container ul li:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
 
-.nav-holder-2 ul li:hover {
+.nav-holder-2 ul li:hover,
+nav .main-nav .container ul li:hover {
     opacity: 0.5;
     transition: all 200ms ease-in;
 }
@@ -94,19 +78,79 @@ nav .nav-holder-1 .logo span {
     padding: 10px 0px;
 }
 
-
 .nav-holder-3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 100;
     cursor: pointer;
     text-align: end;
-    display: none;
+}
+
+.nav-holder-2 {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 21px 47px;
+    transition: transform 500ms ease-in;
+    z-index: 100000;
+    transition: right 0.3s ease;
+    justify-content: start;
+}
+
+.nav-holder-2 ul {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    font-size: 3.2rem;
+}
+
+.nav-holder-2.is-active {
+    margin: auto;
+    right: 0;
 }
 
 .navbar-close {
-    display: none;
-    font-size: 1.5rem;
-    cursor: pointer;
+    display: block;
+    margin: 20px -3px 65px 0px;
+    text-align: end;
 }
+
+
+
+nav .main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 50%;
+    gap: 50px;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+nav .main-nav .navholder-4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+
+}
+
+
+nav .main-nav .container ul {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 
 @media screen and (min-width: 768px) and (max-width: 1025px) {
     .nav-holder-2 ul {
@@ -120,48 +164,9 @@ nav .nav-holder-1 .logo span {
 
 @media (max-width: 767px) {
 
-    .nav-holder-3 {
-        display: block;
-    }
-
-    .nav-holder-2 {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 100%;
-        height: 100%;
-        flex-direction: column;
-        background-color: #fff;
-        padding: 21px 47px;
-        transition: transform 500ms ease-in;
-        z-index: 10000;
-        transition: right 0.3s ease;
-        justify-content: start;
-    }
-
-    .nav-holder-2.is-active {
-        margin: auto;
-        right: 0;
-    }
-
-    .navbar-close {
-        display: block;
-        margin: 20px -18px 65px 0px;
-        text-align: end;
-    }
-
     .nav-holder-2 ul {
-        flex-direction: column;
-        gap: 20px;
-        font-size: 1.3rem;
-    }
-
-    .nav-holder-2 ul li {
-        padding: 10px;
-    }
-
-    .nav-holder-2 ul li:hover {
-        border-bottom: 3px solid #313131;
+        font-size: 2rem;
+        align-items: center;
     }
 
     nav .nav-holder-1 .logo span {
@@ -170,5 +175,13 @@ nav .nav-holder-1 .logo span {
 
     nav .nav-holder-1 .logos {
         margin-bottom: 20px;
+    }
+
+    nav .main-nav .container {
+        display: none;
+    }
+
+    nav .main-nav .navholder-4 {
+        gap: 30px;
     }
 }
