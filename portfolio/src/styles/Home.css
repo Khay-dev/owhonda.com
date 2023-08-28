@@ -259,42 +259,53 @@
         font-size: 7rem;
     }
 
+    .home-main-hero {
+        top: 55%;
+        left: 50%;
+    }
+
+    .home-hero {
+        height: 90vh;
+    }
+
     .home-section-1 .section-1-p {
         width: 70%;
         margin-left: 44px;
     }
-        .A {
-            width: 55%;
-        }
-    
-        .B {
-            width: 35%;
-        }
-    
-        .C {
-            width: 30%;
-        }
-    
-        .D {
-            width: 30%;
-        }
-    
-        .E {
-            width: 30%;
-        }
-    
-        .F {
-            width: 35%;
-        }
-    
-        .G {
-            width: 55%;
-        }
 
-                   .home-section-1 .btn{
-                    width: 30%;
-                   }
+    .A {
+        width: 55%;
+    }
+
+    .B {
+        width: 35%;
+    }
+
+    .C {
+        width: 30%;
+    }
+
+    .D {
+        width: 30%;
+    }
+
+    .E {
+        width: 30%;
+    }
+
+    .F {
+        width: 35%;
+    }
+
+    .G {
+        width: 55%;
+    }
+
+    .home-section-1 .btn {
+        width: 30%;
+    }
 }
+
 @media (max-width: 767px) {
     .home-hero {
         height: 90vh;

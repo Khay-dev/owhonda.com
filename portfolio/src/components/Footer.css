@@ -124,11 +124,12 @@ footer .footer-b {
 
     footer .footer-a .a2 .mail {
         font-size: 25px;
-        padding: 20px;
+        padding: 15px 0px;
     }
 
     footer .footer-a .a2 {
         width: 100%;
+        padding: 15px;
     }
 
     footer .footer-b {
@@ -147,8 +148,7 @@ footer .footer-b {
     }
 
     footer .footer-a .a2 .socialss {
-        padding: 20px;
-        gap: 20px;
+        gap: 15px;
     }
 
     .socialss .socials-1,

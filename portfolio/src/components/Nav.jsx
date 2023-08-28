@@ -4,6 +4,7 @@ import { BsArrowUpRight } from "react-icons/bs";
 import { CiMenuFries } from "react-icons/ci";
 import { Link, useLocation } from "react-router-dom";
 import "./Nav.css";
+import image1 from "../img/brand3.jpg";
 const Nav = () => {
     const [scrollPosition, setScrollPosition] = useState(0);
     useEffect(() => {
@@ -64,34 +65,56 @@ const Nav = () => {
                 <div className="navbar-close" onClick={toggleNavbar}>
                     <HiX />
                 </div>
+                <div className="main-main-nav">
+                    <div className="nav-holder-2-a">
+                        <ul>
+                            <Link to="/Work">
+                                <li
+                                    className={
+                                        activePage === "/Work" ? "active" : ""
+                                    }
+                                >
+                                    Work
+                                </li>
+                            </Link>
+                            <Link to="/about">
+                                <li
+                                    className={
+                                        activePage === "/about" ? "active" : ""
+                                    }
+                                >
+                                    About Us
+                                </li>
+                            </Link>
+                            <Link to="/contact">
+                                <li
+                                    className={
+                                        activePage === "/contact"
+                                            ? "active"
+                                            : ""
+                                    }
+                                >
+                                    Contact
+                                </li>
+                            </Link>
 
-                <ul>
-                    <Link to="/Work">
-                        <li className={activePage === "/Work" ? "active" : ""}>
-                            Work
-                        </li>
-                    </Link>
-                    <Link to="/about">
-                        <li className={activePage === "/about" ? "active" : ""}>
-                            About Us
-                        </li>
-                    </Link>
-                    <Link to="/contact">
-                        <li
-                            className={
-                                activePage === "/contact" ? "active" : ""
-                            }
-                        >
-                            Contact
-                        </li>
-                    </Link>
+                            <a href="www.linkedin.com" className="link">
+                                {" "}
+                                <li>LinkedIn</li>
+                                <div>
+                                    {" "}
+                                    <BsArrowUpRight />
+                                </div>
+                            </a>
+                        </ul>
+                        <div className="text-nav">OWHONDA.COM</div>
+                    </div>
 
-                    <a href="www.linkedin.com" className="link">
-                        {" "}
-                        <li>LinkedIn</li>
-                        <BsArrowUpRight />
-                    </a>
-                </ul>
+                    <div className="nav-holder-2-b">
+                        <img src={image1} alt="" />
+                        <div className="text-nav">Owhonda Nwokekoro</div>
+                    </div>
+                </div>
             </div>
 
             <div className="main-nav">

@@ -1,0 +1,245 @@
+.about-hero {
+    height: 100vh;
+    position: relative;
+    background-image: linear-gradient(rgba(242, 242, 242, 0.686), rgba(242, 242, 242, 0.786)), url(../img/dotted.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.about-main-hero {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 68%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    padding-left: 30px;
+}
+
+.about-main-hero span {
+    font-size: clamp(2.5rem, 20vw + 8rem, 10rem);
+    line-height: 0.9;
+    color: #000;
+    font-weight: bolder;
+}
+
+.section-about-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 80px 50px;
+    gap: 30px;
+}
+
+
+.section-about-1 .section-b {
+    width: 45%;
+}
+
+.section-about-1 .section-a {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section-about-1 .section-a div {
+    font-size: clamp(1.1rem, 2vw + 1rem, 2rem);
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+.section-about-1 .section-a p {
+    font-size: 18px;
+    line-height: 1.25;
+    width: 90%;
+}
+
+.section-2-about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 80px 50px;
+    gap: 20px;
+    background-color: #fff;
+}
+
+.section-2-about .section-a {
+    width: 35%;
+    font-weight: 700;
+    font-size: clamp(1.3rem, 5vw + 1rem, 2rem);
+}
+
+.section-about-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.section-2-about .section-b,
+.section-2-about .section-c,
+.section-2-about .section-d,
+.section-2-about .section-e {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    width: 40%;
+}
+
+
+* {
+    border: 1px solid red;
+}
+
+.swiper {
+    width: 50%;
+    height: 400px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    content: "";
+    background-color: #000;
+    top: 10%;
+}
+
+/* .swiper-slide:nth-child(1n) {
+    background-color: rgb(206, 17, 17);
+}
+
+.swiper-slide:nth-child(2n) {
+    background-color: rgb(0, 140, 255);
+}
+
+.swiper-slide:nth-child(3n) {
+    background-color: rgb(10, 184, 111);
+}
+
+.swiper-slide:nth-child(4n) {
+    background-color: rgb(211, 122, 7);
+}
+
+.swiper-slide:nth-child(5n) {
+    background-color: rgb(118, 163, 12);
+}
+
+.swiper-slide:nth-child(6n) {
+    background-color: rgb(180, 10, 47);
+}
+
+.swiper-slide:nth-child(7n) {
+    background-color: rgb(35, 99, 19);
+}
+
+.swiper-slide:nth-child(8n) {
+    background-color: rgb(0, 68, 255);
+}
+
+.swiper-slide:nth-child(9n) {
+    background-color: rgb(218, 12, 218);
+}
+
+.swiper-slide:nth-child(10n) {
+    background-color: rgb(54, 94, 77);
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive for tablet mode */
+@media screen and (min-width: 768px) and (max-width: 1025px) {
+    .about-main-hero span {
+        font-size: 7rem;
+    }
+
+    .about-hero {
+        height: 90vh;
+    }
+
+    .about-main-hero {
+        top: 55%;
+        left: 50%;
+    }
+
+    .section-about-1,
+    .section-2-about {
+        padding: 50px 30px;
+    }
+
+
+}
+
+
+
+@media (max-width: 767px) {
+    .about-hero {
+        height: 90vh;
+    }
+
+    .about-main-hero {
+        top: 55%;
+        left: 50%;
+        padding: 20px;
+    }
+
+    .about-main-hero span {
+        font-size: clamp(3rem, 10vw + 1rem, 13rem);
+    }
+
+    .section-about-1,
+    .section-2-about {
+        flex-direction: column;
+        padding: 40px 30px;
+        align-items: start;
+    }
+
+    .section-about-1 .section-a,
+    .section-about-1 .section-b,
+    .section-about-2,
+    .section-2-about .section-a,
+    .section-2-about .section-b,
+    .section-2-about .section-c,
+    .section-2-about .section-d,
+    .section-2-about .section-e {
+        width: 100%;
+    }
+
+
+}

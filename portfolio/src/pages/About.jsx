@@ -1,9 +1,112 @@
+import Nav from "../components/Nav";
+import Footer from "../components/Footer";
+import "../styles/About.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/effect-fade";
+// import required modules
+import { EffectFade, Navigation, Pagination } from "swiper/modules";
+import Image1 from "../img/hero.jpg";
 const About = () => {
-    return ( 
+    return (
         <div className="about">
-            About  ipsum dolor sit amet consectetur adipisicing elit. Dolores dignissimos dolorem asperiores atque laborum libero ipsum consequatur molestiae eos, nostrum modi aperiam inventore eligendi blanditiis nihil minima quae sequi ducimus amet cumque. Nihil deserunt dolores, porro sint eligendi quisquam nulla doloribus, quibusdam atque distinctio fugit rerum assumenda blanditiis iusto dolorum maxime explicabo animi magni? Quibusdam ipsa aliquid quasi inventore non nisi quidem. Atque labore corrupti delectus enim harum. Voluptatibus id assumenda qui distinctio nulla quasi molestiae magni commodi, fugit, eveniet vel enim temporibus repellendus eos hic? Tempore itaque nostrum voluptatem ullam unde quasi ad fuga, veritatis excepturi maxime, debitis eaque dolorum! Debitis aut voluptatum tenetur ipsa? Laudantium excepturi facere, voluptas perferendis et adipisci ipsa fugit nesciunt labore debitis alias qui natus voluptate iure quibusdam ad deserunt expedita quidem maxime earum tenetur commodi molestiae. Sapiente error sequi esse labore, sit dolorum qui adipisci ut hic maxime ipsa laboriosam veniam eveniet dicta exercitationem ipsum molestias fugiat illo neque impedit aliquam magni? Mollitia eum, ex repudiandae, nulla minus sunt, vitae dolore explicabo doloremque aut impedit tempore quos quia officiis modi perspiciatis reiciendis laborum similique praesentium minima quaerat beatae quas. Ullam asperiores quae consequuntur optio aliquid nam! Facilis quos iusto modi. Pariatur perspiciatis repellat dicta eligendi fugit quae ducimus quod beatae at deleniti magni, corporis iste nesciunt est? Tempore fugit rerum laboriosam labore. Commodi, sit sint? Assumenda modi nisi commodi vel eos animi nulla expedita voluptas incidunt eum ducimus eius quasi, culpa illo cupiditate error minima, autem in! Placeat voluptatibus fugiat cumque porro eaque quos fugit deserunt, dolorum incidunt quod aspernatur error consequuntur natus, alias itaque saepe! Iusto, repellendus consequuntur minus voluptatum ipsum nisi placeat dignissimos laborum cum velit, quod sit accusamus ut quasi earum eius iure vero similique? Officiis labore hic eum consectetur omnis, fugiat dicta reiciendis, doloribus quae aliquid, molestias ea cum.
+            <div className="about-hero">
+                <Nav />
+                <div className="about-main-hero">
+                    <span>EXPLORE THE CREATOR </span>
+                </div>
+            </div>
+            <section className="section-about-1">
+                <div className="section-a">
+                    <div>
+                        Lorem ipsum dolor sit amet,elit elit elit Accusamu
+                        Lorem, ipsum dolor.
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Atque pariatur porro veniam soluta magni totam quae
+                        mollitia itaque Lorem ipsum dolor sit amet. Lorem ipsum
+                        dolor sit amet elit. natus Lorem ipsum dolor sit amet
+                        elit. Fuga velit eius totam illo non eos esse sunt
+                        aliquid.
+                    </p>
+                </div>
+                <div className="section-b">
+                    <img src={Image1} alt="" />
+                </div>
+            </section>
+            <section className="section-2-about">
+                <div className="section-a">MY EXPERTISE</div>
+                <div className="section-about-2">
+                    <div className="section-b">
+                        <h4>Product Design</h4>
+                        <p>
+                            Crafting seamless experiences through thoughtful and
+                            innovative design solutions.
+                        </p>
+                    </div>
+                    <div className="section-c">
+                        <h4>Branding Strategy</h4>
+                        <p>
+                            Elevating brands through strategic insights and
+                            captivating visual narratives.
+                        </p>
+                    </div>
+                    <div className="section-d">
+                        <h4>Content Strategy</h4>
+                        <p>
+                            Shaping narratives to engage, inform, and inspire
+                            audiences effectively.
+                        </p>
+                    </div>
+                    <div className="section-e">
+                        <h4>Visual Design</h4>
+                        <p>
+                            Arranging visuals for clear, engaging communication
+                            across mediums and platforms.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section className="section-3-about">
+                <div className="section-a">
+                    FUN <br /> TIME
+                </div>
+                <div className="section-b">
+                    <div className=".swiper-button-next">custom next btn</div>
+                    <div className=".swiper-button-prev">custom prev btn</div>
+                    <Swiper
+                        spaceBetween={30}
+                        effect={"fade"}
+                        navigation={{
+                            nextel: ".swiper-button-next",
+                            prevel: ".swiper-button-prev",
+                        }}
+                        pagination={{
+                            clickable: true,
+                        }}
+                        modules={[EffectFade, Navigation, Pagination]}
+                        className="mySwiper"
+                    >
+                        <SwiperSlide>
+                            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                        </SwiperSlide>
+                    </Swiper>
+                </div>
+            </section>
+            <Footer />
         </div>
-     );
-}
- 
+    );
+};
+
 export default About;
