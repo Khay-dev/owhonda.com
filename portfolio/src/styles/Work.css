@@ -1,0 +1,103 @@
+.section-1-work {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 220px 50px 80px 50px;
+}
+
+
+.section-1-work .A {
+    width: 60%;
+}
+
+.section-1-work .B {
+    width: 25%;
+}
+
+.section-1-work .C {
+    width: 28%;
+}
+
+.section-1-work .D {
+    width: 28%;
+}
+
+.section-1-work .E {
+    width: 28%;
+}
+
+.section-1-work .F {
+    width: 25%;
+}
+
+.section-1-work .G {
+    width: 60%;
+}
+
+
+.section-1-work #container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 0px 0px;
+}
+
+.section-1-work #container img {
+    height: 350px;
+}
+
+.section-1-work #container .main-text {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+
+/* responsive for tablet mode */
+@media screen and (min-width: 768px) and (max-width: 1025px) {
+    .section-1-work {
+        padding: 180px 50px 80px 50px;
+    }
+
+    .section-1-work .A {
+        width: 55%;
+    }
+
+    .section-1-work .B {
+        width: 37%;
+    }
+
+    .section-1-work .C {
+        width: 30%;
+    }
+
+    .section-1-work .D {
+        width: 30%;
+    }
+
+    .section-1-work .E {
+        width: 30%;
+    }
+
+    .section-1-work .F {
+        width: 37%;
+    }
+
+    .section-1-work .G {
+        width: 55%;
+    }
+}
+
+
+@media (max-width: 767px) {
+
+    .section-1-work #container {
+        width: 100%;
+    }
+
+    .section-1-work {
+        padding: 150px 30px 50px 30px;
+    }
+
+}

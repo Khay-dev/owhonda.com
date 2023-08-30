@@ -22,27 +22,6 @@ const Home = () => {
             className: "B",
         },
         {
-            image: image3,
-            type: "Branding",
-            client: "Lorem Ipsum",
-            id: crypto.randomUUID(),
-            className: "C",
-        },
-        {
-            image: image2,
-            type: "Branding",
-            client: "Lorem Ipsum",
-            id: crypto.randomUUID(),
-            className: "D",
-        },
-        {
-            image: image3,
-            type: "Branding",
-            client: "Lorem Ipsum",
-            id: crypto.randomUUID(),
-            className: "E",
-        },
-        {
             image: image2,
             type: "Branding",
             client: "Lorem Ipsum",

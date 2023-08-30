@@ -102,7 +102,7 @@ footer .footer-b {
 /* responsive for tablet mode */
 @media screen and (min-width: 768px) and (max-width: 1025px) {
     footer .footer-a {
-        height: 30vh;
+        height: 25vh;
     }
 
     footer .footer-b {

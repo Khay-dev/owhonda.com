@@ -1,9 +1,84 @@
+import image2 from "../img/brand2.jpg";
+import image3 from "../img/brand3.jpg";
+import "../styles/Work.css";
+import Nav from "../components/Nav";
+import Footer from "../components/Footer";
 const Work = () => {
-    return ( 
+    let works = [
+        {
+            image: image3,
+            type: "Branding",
+            client: "Lorem Ipsum",
+            id: crypto.randomUUID(),
+            className: "A",
+        },
+        {
+            image: image2,
+            type: "Branding",
+            client: "Lorem Ipsum",
+            id: crypto.randomUUID(),
+            className: "B",
+        },
+        {
+            image: image3,
+            type: "Branding",
+            client: "Lorem Ipsum",
+            id: crypto.randomUUID(),
+            className: "C",
+        },
+        {
+            image: image2,
+            type: "Branding",
+            client: "Lorem Ipsum",
+            id: crypto.randomUUID(),
+            className: "D",
+        },
+        {
+            image: image3,
+            type: "Branding",
+            client: "Lorem Ipsum",
+            id: crypto.randomUUID(),
+            className: "E",
+        },
+        {
+            image: image2,
+            type: "Branding",
+            client: "Lorem Ipsum",
+            id: crypto.randomUUID(),
+            className: "F",
+        },
+        {
+            image: image3,
+            type: "Branding",
+            client: "Lorem Ipsum",
+            id: crypto.randomUUID(),
+            className: "G",
+        },
+    ];
+
+    return (
         <div className="work">
-            work ipsum dolor sit amet consectetur adipisicing elit. Impedit minus accusantium maiores amet, modi nam sunt explicabo eos ratione minima iusto alias quos quas voluptates iure rem deserunt. Dolorem, qui ab perferendis aut fugit quam mollitia voluptatum adipisci. Mollitia nisi repellat labore soluta architecto molestias, consequuntur iure hic earum aliquam eaque libero ullam excepturi ab. Rerum impedit aperiam, blanditiis eum porro ab ut deleniti, illum ex ducimus facilis accusantium. Modi repellendus error nulla accusantium cupiditate tempora sequi. Eum, placeat doloremque architecto, ut sint dolorem quibusdam nam culpa beatae cum ratione provident accusamus nisi laborum suscipit. Excepturi tempora ea, optio modi placeat, perferendis voluptatem non id eligendi porro assumenda. Exercitationem nostrum ex vitae! Excepturi, totam velit! Inventore doloribus porro ullam eveniet assumenda dolorum voluptatibus veritatis minus provident, quisquam dolor velit earum sunt odit voluptate ea. Vitae atque, tempore nemo sequi quod, maiores earum quis hic, architecto obcaecati alias possimus impedit quos sit culpa sed facere? Quo excepturi repellendus voluptatum hic mollitia tenetur soluta, reiciendis molestiae. Consequatur esse tempore temporibus veniam. Distinctio deserunt corrupti voluptatem? Itaque odit, iste recusandae at possimus eaque soluta eos autem expedita qui natus! In eum repudiandae dolor sit, nesciunt consequatur tempore inventore explicabo quis adipisci unde? Sapiente quae vero quibusdam reiciendis, ad eius illum deserunt corrupti vitae tempora saepe tempore sunt veniam odit! Maiores explicabo fugit, itaque, delectus ut nemo necessitatibus repellat quasi esse cupiditate, eos numquam? Aspernatur voluptas velit incidunt error maiores, repudiandae voluptatum animi fuga dicta, repellat culpa consequatur voluptate a iste? Ab suscipit sint saepe! Quis a saepe blanditiis, dignissimos eligendi sunt. Id ipsum eligendi quos voluptates nisi, libero quis, neque explicabo ab nulla reprehenderit, dolore nesciunt officia magnam distinctio corrupti sapiente ullam inventore itaque quae iure ea repellendus? Excepturi, inventore nobis! Consequuntur quidem quos repellat dignissimos ratione iure cum hic saepe molestias neque!
+            <div className="work-hero">
+                <Nav />
+            </div>
+            <div className="section-1-work">
+                {works.map((work) => (
+                    <div
+                        id="container"
+                        className={work.className}
+                        key={work.id}
+                    >
+                        <img src={work.image} alt="pics" />
+                        <div className="text">
+                            <p className="main-text">{work.client}</p>
+                            <p className="">{work.type}</p>
+                        </div>
+                    </div>
+                ))}
+            </div>
+            <Footer />
         </div>
-     );
-}
- 
+    );
+};
+
 export default Work;
