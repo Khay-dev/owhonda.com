@@ -14,7 +14,7 @@
     justify-content: space-between;
     align-items: center;
     position: absolute;
-    top: 68%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 999;
@@ -52,11 +52,11 @@
 .section-about-1 .section-a div {
     font-size: clamp(1.1rem, 2vw + 1rem, 2rem);
     line-height: 1.2;
-    font-weight: 600;
+    font-weight: 900;
 }
 
 .section-about-1 .section-a p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.25;
     width: 90%;
 }
@@ -67,15 +67,20 @@
     align-items: center;
     width: 100%;
     padding: 80px 50px;
-    gap: 20px;
+    gap: 40px;
     background-color: #fff;
 }
 
+
+
+.section-3-about .section-a,
 .section-2-about .section-a {
     width: 35%;
-    font-weight: 700;
-    font-size: clamp(1.3rem, 5vw + 1rem, 2rem);
+    font-weight: 900;
+    line-height: 1.15;
+    font-size: clamp(1.3rem, 2vw + 1rem, 2.5rem);
 }
+
 
 .section-about-2 {
     display: flex;
@@ -83,7 +88,7 @@
     align-items: center;
     width: 60%;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 35px;
 }
 
 .section-2-about .section-b,
@@ -92,18 +97,85 @@
 .section-2-about .section-e {
     display: flex;
     flex-direction: column;
-    gap: 9px;
+    gap: 10px;
     width: 40%;
 }
 
-
-* {
-    border: 1px solid red;
+.section-2-about .section-b h4,
+.section-2-about .section-c h4,
+.section-2-about .section-d h4,
+.section-2-about .section-e h4 {
+    font-size: 16px;
 }
 
+.section-2-about .section-b p,
+.section-2-about .section-c p,
+.section-2-about .section-d p,
+.section-2-about .section-e p {
+    font-size: 14px;
+    line-height: 1.45;
+}
+
+
+.section-3-about {
+    display: flex;
+    gap: 10px;
+    padding: 55px 50px;
+    width: 100%;
+}
+
+.section-3-about .section-a {
+    width: 20%;
+}
+
+.section-3-about .section-b {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 30px;
+    width: 80%;
+}
+
+.section-3-about .section-b .section-b-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.section-3-about .section-b .section-b-btn .next,
+.section-3-about .section-b .section-b-btn .prev {
+    padding: 10px 20px;
+    background: #fff;
+    border: none;
+    border-radius: .5rem;
+    color: #000;
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.section-3-about .section-b .section-b-btn .next:hover,
+.section-3-about .section-b .section-b-btn .prev:hover {
+    box-shadow: -2px -2px 6px rgba(255, 255, 255, .6),
+        -2px -2px 4px rgba(255, 255, 255, .4),
+        2px 2px 2px rgba(255, 255, 255, .05),
+        2px 2px 4px rgba(0, 0, 0, .1);
+}
+
+.section-3-about .section-b .section-b-btn .next:active,
+.section-3-about .section-b .section-b-btn .prev:active {
+    box-shadow: inset -2px -2px 6px rgba(255, 255, 255, .7),
+        inset -2px -2px 4px rgba(255, 255, 255, .5),
+        inset 2px 2px 2px rgba(255, 255, 255, .075),
+        inset 2px 2px 4px rgba(0, 0, 0, .15);
+}
+
+
 .swiper {
-    width: 50%;
-    height: 400px;
+    width: 100%;
+    height: auto;
 }
 
 .swiper-slide {
@@ -111,76 +183,77 @@
     background-size: cover;
 }
 
-.swiper-slide img {
-    display: block;
+.main-swiper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
     width: 100%;
+    height: 420px;
 }
 
-.swiper-button-next,
-.swiper-button-prev {
-    content: "";
-    background-color: #000;
-    top: 10%;
+.main-swiper .a {
+    aspect-ratio: 1/1;
+    width: 50%;
 }
 
-/* .swiper-slide:nth-child(1n) {
-    background-color: rgb(206, 17, 17);
+.main-swiper .b {
+    color: #000;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    padding: 0px 30px;
 }
 
-.swiper-slide:nth-child(2n) {
-    background-color: rgb(0, 140, 255);
-}
 
-.swiper-slide:nth-child(3n) {
-    background-color: rgb(10, 184, 111);
-}
-
+.swiper-slide:nth-child(1n),
+.swiper-slide:nth-child(2n),
+.swiper-slide:nth-child(3n),
 .swiper-slide:nth-child(4n) {
-    background-color: rgb(211, 122, 7);
+    background-color: #f2f2f2;
 }
 
-.swiper-slide:nth-child(5n) {
-    background-color: rgb(118, 163, 12);
+
+.swiper-slide:nth-child(1n) .a {
+    background-image: url(../img/gym.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.swiper-slide:nth-child(6n) {
-    background-color: rgb(180, 10, 47);
+.swiper-slide:nth-child(2n) .a {
+    background-image: url(../img/cook.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.swiper-slide:nth-child(7n) {
-    background-color: rgb(35, 99, 19);
+.swiper-slide:nth-child(3n) .a {
+    background-image: url(../img/karate.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.swiper-slide:nth-child(8n) {
-    background-color: rgb(0, 68, 255);
+.swiper-slide:nth-child(4n) .a {
+    background-image: url(../img/music.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.swiper-slide:nth-child(9n) {
-    background-color: rgb(218, 12, 218);
+.main-swiper .b h2 {
+    font-size: 2rem;
+    font-weight: 900;
 }
 
-.swiper-slide:nth-child(10n) {
-    background-color: rgb(54, 94, 77);
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.main-swiper .b p {
+    font: 14px;
+    line-height: 1.45;
+}
 
 
 /* responsive for tablet mode */
@@ -201,6 +274,14 @@
     .section-about-1,
     .section-2-about {
         padding: 50px 30px;
+    }
+
+    .section-3-about {
+        flex-direction: column;
+    }
+
+    .section-3-about .section-b {
+        width: 100%;
     }
 
 
@@ -224,7 +305,8 @@
     }
 
     .section-about-1,
-    .section-2-about {
+    .section-2-about,
+    .section-3-about {
         flex-direction: column;
         padding: 40px 30px;
         align-items: start;
@@ -237,8 +319,20 @@
     .section-2-about .section-b,
     .section-2-about .section-c,
     .section-2-about .section-d,
-    .section-2-about .section-e {
+    .section-2-about .section-e,
+    .section-3-about .section-b,
+    .main-swiper .b,
+    .main-swiper .a,
+    .section-about-1 .section-a p {
         width: 100%;
+    }
+
+    .main-swiper {
+        flex-direction: column;
+    }
+
+    .main-swiper .b {
+        padding: 0px;
     }
 
 

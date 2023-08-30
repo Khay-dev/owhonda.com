@@ -1,13 +1,15 @@
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import "../styles/About.css";
+import { BiChevronsLeft, BiChevronsRight } from "react-icons/bi";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import "swiper/css/effect-creative";
 import "swiper/css/navigation";
-import "swiper/css/effect-fade";
 // import required modules
-import { EffectFade, Navigation, Pagination } from "swiper/modules";
+import { EffectCreative, Navigation } from "swiper/modules";
 import Image1 from "../img/hero.jpg";
+
 const About = () => {
     return (
         <div className="about">
@@ -37,7 +39,9 @@ const About = () => {
                 </div>
             </section>
             <section className="section-2-about">
-                <div className="section-a">MY EXPERTISE</div>
+                <div className="section-a">
+                    MY <br /> EXPERTISE
+                </div>
                 <div className="section-about-2">
                     <div className="section-b">
                         <h4>Product Design</h4>
@@ -71,35 +75,106 @@ const About = () => {
             </section>
             <section className="section-3-about">
                 <div className="section-a">
-                    FUN <br /> TIME
+                    <p>
+                        FUN <br /> TIME
+                    </p>
                 </div>
                 <div className="section-b">
-                    <div className=".swiper-button-next">custom next btn</div>
-                    <div className=".swiper-button-prev">custom prev btn</div>
+                    <div className="section-b-btn">
+                        <div className="prev">
+                            <BiChevronsLeft />
+                        </div>
+                        <div className="next">
+                            <BiChevronsRight />
+                        </div>
+                    </div>
+
                     <Swiper
-                        spaceBetween={30}
-                        effect={"fade"}
-                        navigation={{
-                            nextel: ".swiper-button-next",
-                            prevel: ".swiper-button-prev",
+                        navigation={{ prevEl: ".prev", nextEl: ".next" }}
+                        grabCursor={true}
+                        effect={"creative"}
+                        creativeEffect={{
+                            prev: {
+                                shadow: true,
+                                translate: [0, 0, -400],
+                            },
+                            next: {
+                                translate: ["100%", 0, 0],
+                            },
                         }}
-                        pagination={{
-                            clickable: true,
-                        }}
-                        modules={[EffectFade, Navigation, Pagination]}
+                        modules={[EffectCreative, Navigation]}
                         className="mySwiper"
                     >
                         <SwiperSlide>
-                            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                            <div className="main-swiper">
+                                <div className="a">
+                                   
+                                </div>
+                                <div className="b">
+                                    <h2>GYM</h2>
+                                    <p>
+                                        Lorem ipsum dolor, sit amet consectetur
+                                        adipisicing elit. Nobis animi dolores
+                                        qui quam eos numquam neque ullam
+                                        similique, beatae temporibus maxime sit
+                                        labore dicta quis, eaque exercitationem
+                                        perferendis, atque accusamus.
+                                    </p>
+                                </div>
+                            </div>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                            {" "}
+                            <div className="main-swiper">
+                                <div className="a">
+                                </div>
+                                <div className="b">
+                                    <h2>COOKING</h2>
+                                    <p>
+                                        Lorem ipsum dolor, sit amet consectetur
+                                        adipisicing elit. Nobis animi dolores
+                                        qui quam eos numquam neque ullam
+                                        similique, beatae temporibus maxime sit
+                                        labore dicta quis, eaque exercitationem
+                                        perferendis, atque accusamus.
+                                    </p>
+                                </div>
+                            </div>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                            <div className="main-swiper">
+                                <div className="a">
+                                </div>
+                                <div className="b">
+                                    <h2>KARATE</h2>
+                                    <p>
+                                        Lorem ipsum dolor, sit amet consectetur
+                                        adipisicing elit. Nobis animi dolores
+                                        qui quam eos numquam neque ullam
+                                        similique, beatae temporibus maxime sit
+                                        labore dicta quis, eaque exercitationem
+                                        perferendis, atque accusamus.
+                                    </p>
+                                </div>
+                            </div>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                            {" "}
+                            <div className="main-swiper">
+                                <div className="a">
+                                </div>
+                                <div className="b">
+                                    <h2>MUSIC</h2>
+                                    <p>
+                                        Lorem ipsum dolor, sit amet consectetur
+                                        adipisicing elit. Nobis animi dolores
+                                        qui quam eos numquam neque ullam
+                                        similique, beatae temporibus maxime sit
+                                        labore dicta quis, eaque exercitationem
+                                        perferendis, atque accusamus.
+                                    </p>
+                                </div>
+                            </div>
                         </SwiperSlide>
                     </Swiper>
                 </div>
