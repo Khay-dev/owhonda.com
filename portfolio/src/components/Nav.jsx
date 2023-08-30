@@ -68,6 +68,15 @@ const Nav = () => {
                 <div className="main-main-nav">
                     <div className="nav-holder-2-a">
                         <ul>
+                            <Link to="/">
+                                <li
+                                    className={
+                                        activePage === "/" ? "active" : ""
+                                    }
+                                >
+                                    Home
+                                </li>
+                            </Link>
                             <Link to="/Work">
                                 <li
                                     className={
