@@ -1,0 +1,172 @@
+.section-1-work {
+    width: 100%;
+    height: 60%;
+    padding: 150px 50px 30px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.section-1-work .section-a {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+}
+
+.section-1-work .section-a h4 {
+    font-weight: 900;
+    font-size: clamp(1.2rem, 2vw + 1rem, 2rem);
+    line-height: 1;
+}
+
+.section-1-work .section-a p {
+    line-height: 1.25;
+    font-size: 16px;
+}
+
+
+.section-1-work .section-b {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 40%;
+}
+
+.section-1-work .section-b p {
+    font-size: 15px;
+    line-height: 1.35
+}
+
+.section-1-work .section-b a {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    gap: 3px;
+}
+
+.section-1-work .section-b a:hover {
+    opacity: 0.5;
+}
+
+
+
+.section-1-work.section-b p {
+    font-size: 18px;
+    line-height: 1.45;
+}
+
+.swiper {
+    width: 100%;
+    height: auto;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-2-work {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.main-swiperr {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    width: 65%;
+    height: 400px;
+}
+
+.section-2-work .prev,
+.section-2-work .next {
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.section-2-work .prev:hover,
+.section-2-work .next:hover {
+    opacity: 0.6;
+}
+
+.section-3-work {
+    padding: 50px;
+}
+
+.section-3-work .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+
+.section-3-work .container .items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.section-3-work .container .items:hover {
+    background-color: #000;
+    color: #fff;
+    transition: all 250ms ease-in-out;
+}
+
+.section-3-work .container .items .item-1 h4 {
+    font-size: 16px;
+}
+
+.section-3-work .container .items .item-1 p {
+    font-size: 14px;
+}
+
+.section-3-work .container .items .item-2 {
+    width: 8%;
+}
+
+
+@media (max-width: 767px) {
+    .section-1-work {
+        flex-direction: column;
+        padding: 150px 30px 0px 30px;
+    }
+
+
+    .section-3-work {
+        padding: 20px 20px 40px 20px;
+    }
+
+    .section-2-work {
+        padding: 0px 20px 0px 20px;
+        gap: 10px;
+
+    }
+
+    .section-1-work .section-a,
+    .section-1-work .section-b,
+    .main-swiperr {
+        width: 100%;
+    }
+
+    .section-2-work .prev,
+    .section-2-work .next {
+        font-size: 20px;
+    }
+
+    .section-3-work .container .items .item-2 {
+        width: 20%;
+    }
+}

@@ -3,6 +3,8 @@ import image3 from "../img/brand3.jpg";
 import "../styles/Work.css";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
+
 const Work = () => {
     let works = [
         {
@@ -11,6 +13,7 @@ const Work = () => {
             client: "Lorem Ipsum",
             id: crypto.randomUUID(),
             className: "A",
+            location: "/Work1",
         },
         {
             image: image2,
@@ -18,6 +21,7 @@ const Work = () => {
             client: "Lorem Ipsum",
             id: crypto.randomUUID(),
             className: "B",
+            location: "/Work2",
         },
         {
             image: image3,
@@ -25,6 +29,7 @@ const Work = () => {
             client: "Lorem Ipsum",
             id: crypto.randomUUID(),
             className: "C",
+            location: "/Work3",
         },
         {
             image: image2,
@@ -32,6 +37,7 @@ const Work = () => {
             client: "Lorem Ipsum",
             id: crypto.randomUUID(),
             className: "D",
+            location: "/Work4",
         },
         {
             image: image3,
@@ -39,6 +45,7 @@ const Work = () => {
             client: "Lorem Ipsum",
             id: crypto.randomUUID(),
             className: "E",
+            location: "/Work5",
         },
         {
             image: image2,
@@ -46,6 +53,7 @@ const Work = () => {
             client: "Lorem Ipsum",
             id: crypto.randomUUID(),
             className: "F",
+            location: "/Work6",
         },
         {
             image: image3,
@@ -53,6 +61,7 @@ const Work = () => {
             client: "Lorem Ipsum",
             id: crypto.randomUUID(),
             className: "G",
+            location: "/Work7",
         },
     ];
 
@@ -63,7 +72,8 @@ const Work = () => {
             </div>
             <div className="section-1-work">
                 {works.map((work) => (
-                    <div
+                    <Link
+                        to={work.location}
                         id="container"
                         className={work.className}
                         key={work.id}
@@ -73,7 +83,7 @@ const Work = () => {
                             <p className="main-text">{work.client}</p>
                             <p className="">{work.type}</p>
                         </div>
-                    </div>
+                    </Link>
                 ))}
             </div>
             <Footer />

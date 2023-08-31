@@ -71,7 +71,7 @@ const Home = () => {
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Sed aut unde sunt minus odio culpa nesciunt magni, at fugiat
                     quidem dolor, voluptatibus id. Ad iste repudiandae, sit
-                    laudantium ex archi below are some snippets  of what i do.
+                    laudantium ex archi below are some snippets of what i do.
                 </p>
                 <div className="section-1-main">
                     {works.map((work) => (
@@ -98,9 +98,8 @@ const Home = () => {
             <section className="home-section-2">
                 <div className="section-a">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur elit.
-                         quam velit cumque sint, ipsa voluptatum
-                        odit veritatis lorem lorem 
+                        Lorem ipsum dolor sit amet consectetur elit. quam velit
+                        cumque sint, ipsa voluptatum odit veritatis lorem lorem
                     </p>
                 </div>
                 <div className="section-b">

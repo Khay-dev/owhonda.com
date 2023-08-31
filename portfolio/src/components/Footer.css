@@ -130,6 +130,8 @@ footer .footer-b {
     footer .footer-a .a2 {
         width: 100%;
         padding: 15px;
+        border-top: none;
+        border-left: none;
     }
 
     footer .footer-b {
