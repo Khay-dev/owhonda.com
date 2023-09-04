@@ -52,19 +52,12 @@
 }
 
 
-
-.section-1-work.section-b p {
-    font-size: 18px;
-    line-height: 1.45;
-}
-
 .swiper {
     width: 100%;
     height: auto;
 }
 
 .swiper-slide {
-    text-align: center;
     font-size: 18px;
     display: flex;
     justify-content: center;

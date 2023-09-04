@@ -205,6 +205,7 @@
     flex-direction: column;
     gap: 15px;
     justify-content: center;
+    align-items: start;
     padding: 0px 30px;
 }
 
@@ -251,8 +252,9 @@
 }
 
 .main-swiper .b p {
-    font: 14px;
+    font-size: 14px;
     line-height: 1.45;
+
 }
 
 
