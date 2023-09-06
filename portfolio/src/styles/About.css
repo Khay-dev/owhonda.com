@@ -303,7 +303,8 @@
     }
 
     .about-main-hero span {
-        font-size: clamp(3rem, 10vw + 1rem, 13rem);
+        font-size: clamp(3rem, 16vw + 1rem, 3.5rem);
+        font-weight: bolder;
     }
 
     .section-about-1,

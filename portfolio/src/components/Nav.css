@@ -3,7 +3,7 @@ nav {
     width: 100%;
     align-items: start;
     justify-content: space-between;
-    padding: 24px;
+    padding: 20px 25px;
     color: #000;
     background-color: transparent;
     position: fixed;
@@ -17,8 +17,8 @@ nav .nav-holder-1 .logo {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
 }
+
 
 nav .nav-holder-1 {
     display: flex;
@@ -31,7 +31,7 @@ nav .nav-holder-1 {
 
 nav .nav-holder-1 .logos {
     flex-shrink: 0;
-    margin-bottom: 35px;
+    margin-bottom: 40px;
 }
 
 nav .nav-holder-1 .logo span {
@@ -141,7 +141,7 @@ nav .main-nav .container ul li:hover {
     width: 60%;
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: center;
     align-items: end;
     gap: 40px;
     margin-bottom: 70px;
@@ -216,6 +216,9 @@ nav .main-nav .container ul {
 }
 
 @media (max-width: 767px) {
+    nav {
+        padding: 20px 15px;
+    }
 
     .nav-holder-2 ul {
         font-size: 2rem;
@@ -251,7 +254,7 @@ nav .main-nav .container ul {
     }
 
     nav .nav-holder-1 .logos {
-        margin-bottom: 33px;
+        margin-bottom: 46px;
     }
 
     nav .main-nav .container {

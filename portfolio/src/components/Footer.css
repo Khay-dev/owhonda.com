@@ -30,6 +30,10 @@ footer .footer-a .a1 {
 
 }
 
+footer .footer-a .a1 img{
+    width: 60%;
+}
+
 footer .footer-a .a2 {
     display: flex;
     flex-direction: column;

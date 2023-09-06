@@ -13,6 +13,7 @@ const Home = () => {
             client: "Lorem Ipsum",
             id: crypto.randomUUID(),
             className: "A",
+            location: "/Work1",
         },
         {
             image: image2,
@@ -20,6 +21,7 @@ const Home = () => {
             client: "Lorem Ipsum",
             id: crypto.randomUUID(),
             className: "B",
+            location: "/Work2",
         },
         {
             image: image2,
@@ -27,6 +29,7 @@ const Home = () => {
             client: "Lorem Ipsum",
             id: crypto.randomUUID(),
             className: "F",
+            location: "/Work3",
         },
         {
             image: image3,
@@ -34,6 +37,7 @@ const Home = () => {
             client: "Lorem Ipsum",
             id: crypto.randomUUID(),
             className: "G",
+            location: "/Work4",
         },
     ];
 
@@ -42,10 +46,10 @@ const Home = () => {
             <div className="home-hero">
                 <Nav />
                 <div className="home-main-hero">
-                    <span>
+                    <h1>
                         OWHONDA <br />
                         .COM
-                    </span>
+                    </h1>
                     <div className="home-hero-2">
                         <a className="arrow" href="#section-1">
                             <svg className="arrows">
@@ -75,7 +79,8 @@ const Home = () => {
                 </p>
                 <div className="section-1-main">
                     {works.map((work) => (
-                        <div
+                        <Link
+                            to={work.location}
                             id="container"
                             className={work.className}
                             key={work.id}
@@ -85,7 +90,7 @@ const Home = () => {
                                 <p className="main-text">{work.client}</p>
                                 <p className="">{work.type}</p>
                             </div>
-                        </div>
+                        </Link>
                     ))}
                 </div>
                 <Link to="/Work">

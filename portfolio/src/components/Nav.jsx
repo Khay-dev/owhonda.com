@@ -4,7 +4,8 @@ import { BsArrowUpRight } from "react-icons/bs";
 import { CiMenuFries } from "react-icons/ci";
 import { Link, useLocation } from "react-router-dom";
 import "./Nav.css";
-import image1 from "../img/brand3.jpg";
+import logo from "../img/logo.png";
+import image1 from "../img/brand2.jpg";
 const Nav = () => {
     const [scrollPosition, setScrollPosition] = useState(0);
     useEffect(() => {
@@ -53,10 +54,8 @@ const Nav = () => {
                         transition: "transform 200ms ",
                     }}
                 >
-                    <div className="logo">
-                        <span>DA</span>
-                        <span>NIEL</span>
-                        <span>.COM</span>
+                    <div className="logo logoo">
+                        <img src={logo} alt="" />
                     </div>
                 </Link>
             </div>

@@ -24,7 +24,7 @@
 
 
 
-.home-main-hero span {
+.home-main-hero h1 {
     font-size: clamp(4rem, 16vw + 8rem, 13rem);
     line-height: 0.8;
     color: #000;
@@ -243,7 +243,7 @@
 
 /* responsive for tablet mode */
 @media screen and (min-width: 768px) and (max-width: 1025px) {
-    .home-main-hero span {
+    .home-main-hero h1 {
         font-size: 7rem;
     }
 
@@ -254,6 +254,11 @@
 
     .home-hero {
         height: 90vh;
+    }
+
+    .home-section-1,
+    .home-section-2 {
+        padding: 50px 35px;
     }
 
     .home-section-1 .section-1-p {
@@ -289,11 +294,13 @@
 
     .home-main-hero {
         top: 55%;
-        left: 50%;
+        left: 46%;
+        padding: 20px;
     }
 
-    .home-main-hero span {
-        font-size: clamp(3rem, 10vw + 1rem, 13rem);
+    .home-main-hero h1 {
+        font-size: clamp(3rem, 16vw + 1rem, 3.5rem);
+        font-weight: bolder;
     }
 
     .home-main-hero .home-hero-2 {

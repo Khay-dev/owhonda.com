@@ -1,10 +1,13 @@
 import "./Footer.css";
+import logo from "../img/logo.png";
 const Footer = () => {
     return (
         <div className="footer">
             <footer>
                 <div className="footer-a">
-                    <div className="a1">O.COM</div>
+                    <div className="a1">
+                        <img src={logo} alt="logo" />
+                    </div>
                     <div className="a2">
                         <div className="mail">
                             <p>Say Hello</p>
