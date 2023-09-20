@@ -115,12 +115,11 @@ const Nav = () => {
                                 </div>
                             </a>
                         </ul>
-                        <div className="text-nav">OWHONDA.COM</div>
                     </div>
 
                     <div className="nav-holder-2-b">
                         <img src={image1} alt="" />
-                        <div className="text-nav">Owhonda Nwokekoro</div>
+                        <div className="text-nav">OWHONDA.COM</div>
                     </div>
                 </div>
             </div>

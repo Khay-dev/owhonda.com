@@ -1,0 +1,135 @@
+.contact-hero {
+    height: 80vh;
+    position: relative;
+    background-image: linear-gradient(rgba(242, 242, 242, 0.686), rgba(242, 242, 242, 0.786)), url(../img/dotted.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.contact-main-hero {
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    color: #fff;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+
+
+
+.contact-main-hero span {
+    font-size: clamp(1.5rem, 2vw + 4rem, 3.5rem);
+    line-height: 0.8;
+    color: #000;
+    font-weight: bolder;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+
+
+.contact-main-hero p {
+    font-size: 18px;
+    line-height: 1.45;
+    color: #000;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.section-contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 40px;
+    width: 100%;
+    border-top: 1px solid #000;
+}
+
+.section-contact .section-1 {
+    width: 30%;
+}
+
+.section-contact .section-1 img {
+    width: 50%;
+}
+
+.section-contact .socials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    gap: 30px;
+}
+
+.section-contact .socials .section-2,
+.section-contact .socials .section-3,
+.section-contact .socials .section-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    line-height: 1;
+    gap: 6px;
+    font-size: 13px;
+    width: 32%;
+    height: 100%;
+}
+
+/* responsive for tablet mode */
+@media screen and (min-width: 768px) and (max-width: 1025px) {
+    .contact-main-hero {
+        width: 80%;
+    }
+
+    .section-contact .section-1 img {
+        width: 70%;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .contact-main-hero {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .contact-main-hero span {
+        font-size: clamp(1.5rem, 1vw + 2rem, 3rem);
+    }
+
+    .section-contact {
+        flex-direction: column;
+        height: auto;
+        padding: 30px;
+        gap: 40px;
+    }
+
+    .section-contact .section-1,
+    .section-contact .socials {
+        width: 100%;
+    }
+
+    .section-contact .socials {
+
+        font-size: 13px;
+        justify-content: space-between;
+    }
+
+    .section-contact .section-1 img {
+        width: 50%;
+    }
+
+    .section-contact .section-1 {
+        display: grid;
+        place-items: center;
+    }
+
+}

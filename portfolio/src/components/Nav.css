@@ -121,9 +121,9 @@ nav .main-nav .container ul li:hover {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    gap: 10px;
+    gap: 30px;
     color: #fff;
-    font-size: 3.2rem;
+    font-size: 3.5rem;
     font-weight: 700;
     margin-bottom: 50px;
 }
@@ -131,21 +131,22 @@ nav .main-nav .container ul li:hover {
 .nav-holder-2 .main-main-nav .nav-holder-2-a {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     width: 40%;
     height: 100%;
     color: #fff;
+    margin-top: 50px;
 }
 
 .nav-holder-2 .main-main-nav .nav-holder-2-b {
     width: 60%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: end;
     gap: 40px;
-    margin-bottom: 70px;
     color: #fff;
+    margin-top: 50px;
 }
 
 .text-nav {
@@ -213,6 +214,13 @@ nav .main-nav .container ul {
     nav {
         padding: 20px;
     }
+
+    .nav-holder-2 .main-main-nav .nav-holder-2-b,
+    .nav-holder-2 .main-main-nav .nav-holder-2-a {
+        justify-content: center;
+        margin: 0px !;
+    }
+
 }
 
 @media (max-width: 767px) {

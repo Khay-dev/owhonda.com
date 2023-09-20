@@ -46,7 +46,13 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="footer-b">
-                    <div className="copy-1">OWHONDA.COM</div>
+                    <div
+                        className="copy-1"
+                        data-aos="zoom-in"
+                        data-aos-duration="2000"
+                    >
+                        OWHONDA.COM
+                    </div>
                 </div>
                 <div className="footer-c">
                     <div className="copy-2">

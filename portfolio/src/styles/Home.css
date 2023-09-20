@@ -25,7 +25,7 @@
 
 
 .home-main-hero h1 {
-    font-size: clamp(4rem, 16vw + 8rem, 13rem);
+    font-size: clamp(4rem, 20vw + 8rem, 17rem);
     line-height: 0.8;
     color: #000;
     font-weight: bolder;
@@ -289,11 +289,11 @@
 
 @media (max-width: 767px) {
     .home-hero {
-        height: 90vh;
+        height: 95vh;
     }
 
     .home-main-hero {
-        top: 55%;
+        top: 60%;
         left: 46%;
         padding: 20px;
     }

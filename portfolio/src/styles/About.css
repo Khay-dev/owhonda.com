@@ -22,7 +22,7 @@
 }
 
 .about-main-hero span {
-    font-size: clamp(2.5rem, 20vw + 8rem, 10.3rem);
+    font-size: clamp(2.5rem, 20vw + 8rem, 12rem);
     line-height: 0.9;
     color: #000;
     font-weight: bolder;
@@ -293,11 +293,11 @@
 
 @media (max-width: 767px) {
     .about-hero {
-        height: 90vh;
+        height: 95vh;
     }
 
     .about-main-hero {
-        top: 55%;
+        top: 60%;
         left: 50%;
         padding: 20px;
     }

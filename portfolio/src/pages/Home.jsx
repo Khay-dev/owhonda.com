@@ -1,10 +1,17 @@
 import Nav from "../components/Nav";
 import "../styles/Home.css";
+import Footer from "../components/Footer";
+
 import image2 from "../img/brand2.jpg";
 import image3 from "../img/brand3.jpg";
+
 import { BsArrowUpRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
-import Footer from "../components/Footer";
+import { useEffect } from "react";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const Home = () => {
     let works = [
         {
@@ -14,6 +21,8 @@ const Home = () => {
             id: crypto.randomUUID(),
             className: "A",
             location: "/Work1",
+            animation: "zoom-in-right",
+            duration: 1500,
         },
         {
             image: image2,
@@ -22,6 +31,8 @@ const Home = () => {
             id: crypto.randomUUID(),
             className: "B",
             location: "/Work2",
+            animation: "zoom-in-left",
+            duration: 2500,
         },
         {
             image: image2,
@@ -30,6 +41,8 @@ const Home = () => {
             id: crypto.randomUUID(),
             className: "F",
             location: "/Work3",
+            animation: "zoom-in-right",
+            duration: 1500,
         },
         {
             image: image3,
@@ -38,15 +51,25 @@ const Home = () => {
             id: crypto.randomUUID(),
             className: "G",
             location: "/Work4",
+            animation: "zoom-in-left",
+            duration: 2000,
         },
     ];
+
+    useEffect(() => {
+        AOS.init();
+    }, []);
 
     return (
         <div className="home">
             <div className="home-hero">
                 <Nav />
                 <div className="home-main-hero">
-                    <h1>
+                    <h1
+                        data-aos="fade-down"
+                        data-aos-easing="linear"
+                        data-aos-duration="1300"
+                    >
                         OWHONDA <br />
                         .COM
                     </h1>
@@ -84,6 +107,8 @@ const Home = () => {
                             id="container"
                             className={work.className}
                             key={work.id}
+                            data-aos={work.animation}
+                            data-aos-duration={work.duration}
                         >
                             <img src={work.image} alt="pics" />
                             <div className="text">

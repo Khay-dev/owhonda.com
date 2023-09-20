@@ -2,13 +2,6 @@ import Nav from "../components/Nav";
 import "../styles/AllWork.css";
 import { BsArrowUpRight } from "react-icons/bs";
 import Footer from "../components/Footer";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/effect-creative";
-import "swiper/css/navigation";
-// import required modules
-import { EffectCreative, Navigation } from "swiper/modules";
-import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 import image2 from "../img/brand2.jpg";
 import image3 from "../img/brand3.jpg";
 import { Link } from "react-router-dom";
@@ -39,52 +32,18 @@ const WorkA = () => {
                         </a>
                     </div>
                 </div>
-                <div className="section-2-work">
-                    <div className="prev">
-                        <AiOutlineArrowLeft />
+         <div className="section-2-work">
+                    <div className="main-swiperr">
+                        <img src={image2} alt="" />
                     </div>
-                    <Swiper
-                        navigation={{ prevEl: ".prev", nextEl: ".next" }}
-                        grabCursor={true}
-                        effect={"creative"}
-                        creativeEffect={{
-                            prev: {
-                                shadow: true,
-                                translate: [0, 0, -400],
-                            },
-                            next: {
-                                translate: ["100%", 0, 0],
-                            },
-                        }}
-                        modules={[EffectCreative, Navigation]}
-                        className="mySwiper"
-                    >
-                        <SwiperSlide>
-                            <div className="main-swiperr">
-                                <img src={image2} alt="" />
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            {" "}
-                            <div className="main-swiperr">
-                                <img src={image3} alt="" />
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            {" "}
-                            <div className="main-swiperr">
-                                <img src={image2} alt="" />
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            {" "}
-                            <div className="main-swiperr">
-                                <img src={image3} alt="" />
-                            </div>
-                        </SwiperSlide>
-                    </Swiper>
-                    <div className="next">
-                        <AiOutlineArrowRight />
+                    <div className="main-swiperr">
+                        <img src={image3} alt="" />
+                    </div>
+                    <div className="main-swiperr">
+                        <img src={image2} alt="" />
+                    </div>
+                    <div className="main-swiperr">
+                        <img src={image3} alt="" />
                     </div>
                 </div>
             </section>

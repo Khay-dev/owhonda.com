@@ -6,17 +6,28 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-creative";
 import "swiper/css/navigation";
-// import required modules
 import { EffectCreative, Navigation } from "swiper/modules";
 import Image1 from "../img/hero.jpg";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const About = () => {
+    useEffect(() => {
+        AOS.init();
+    }, []);
     return (
         <div className="about">
             <div className="about-hero">
                 <Nav />
                 <div className="about-main-hero">
-                    <span>EXPLORE THE CREATOR </span>
+                    <span
+                        data-aos="fade-down"
+                        data-aos-easing="linear"
+                        data-aos-duration="1200"
+                    >
+                        EXPLORE THE CREATOR{" "}
+                    </span>
                 </div>
             </div>
             <section className="section-about-1">
@@ -35,7 +46,12 @@ const About = () => {
                     </p>
                 </div>
                 <div className="section-b">
-                    <img src={Image1} alt="" />
+                    <img
+                        src={Image1}
+                        alt=""
+                        data-aos="fade-left"
+                        data-aos-duration="1200"
+                    />
                 </div>
             </section>
             <section className="section-2-about">
@@ -107,9 +123,7 @@ const About = () => {
                     >
                         <SwiperSlide>
                             <div className="main-swiper">
-                                <div className="a">
-                                   
-                                </div>
+                                <div className="a"></div>
                                 <div className="b">
                                     <h2>GYM</h2>
                                     <p>
@@ -126,8 +140,7 @@ const About = () => {
                         <SwiperSlide>
                             {" "}
                             <div className="main-swiper">
-                                <div className="a">
-                                </div>
+                                <div className="a"></div>
                                 <div className="b">
                                     <h2>COOKING</h2>
                                     <p>
@@ -143,8 +156,7 @@ const About = () => {
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className="main-swiper">
-                                <div className="a">
-                                </div>
+                                <div className="a"></div>
                                 <div className="b">
                                     <h2>KARATE</h2>
                                     <p>
@@ -161,8 +173,7 @@ const About = () => {
                         <SwiperSlide>
                             {" "}
                             <div className="main-swiper">
-                                <div className="a">
-                                </div>
+                                <div className="a"></div>
                                 <div className="b">
                                     <h2>MUSIC</h2>
                                     <p>
