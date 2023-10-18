@@ -95,10 +95,15 @@ const Home = () => {
             </div>
             <section id="section-1" className="home-section-1">
                 <p className="section-1-p">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Sed aut unde sunt minus odio culpa nesciunt magni, at fugiat
-                    quidem dolor, voluptatibus id. Ad iste repudiandae, sit
-                    laudantium ex archi below are some snippets of what i do.
+                    Welcome to the creative world of me, Owhonda
+                    <span>(Oh-Honda)</span>, where artistry meets functionality
+                    to craft unforgettable user experiences. Whether you are
+                    looking to enhance your websites user interface, create
+                    compelling user experiences, or revamp your brand identity,
+                    I am here to transform your vision into captivating, user
+                    friendly designs that leave a lasting impression. Explore my
+                    portfolio and lets embark on a journey of design innovation
+                    together.
                 </p>
                 <div className="section-1-main">
                     {works.map((work) => (
@@ -128,16 +133,18 @@ const Home = () => {
             <section className="home-section-2">
                 <div className="section-a">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur elit. quam velit
-                        cumque sint, ipsa voluptatum odit veritatis lorem lorem
+                        FREELANCE <span>UI/UX</span> DESIGNER AND THEN SOME.....
                     </p>
                 </div>
                 <div className="section-b">
                     <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Obcaecati illo tempora nemo distinctio at
-                        voluptate vero pariatur perspiciatis quisquam eveniet.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        I have had the privilege of crafting meaningful
+                        experiences for clients across the globe. As a seasoned{" "}
+                        <span>ui/ux</span> designer with a passion for
+                        aesthetics and functionality, I offer a holistic
+                        approach to design, seamlessly blending user centric
+                        digital experiences with comprehensive branding
+                        solutions.
                     </p>
                     <Link to="/About">
                         <div className="btn">

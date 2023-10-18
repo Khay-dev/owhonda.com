@@ -26,7 +26,7 @@ footer .footer-a .a1 {
 
 }
 
-footer .footer-a .a1 img{
+footer .footer-a .a1 img {
     width: 60%;
 }
 
@@ -45,7 +45,6 @@ footer .footer-a .a2 {
 
 footer .footer-a .a2 .socialss {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     width: 100%;
     gap: 30px;
@@ -63,9 +62,13 @@ footer .footer-a .a2 .mail p {
     line-height: 1;
 }
 
+footer .footer-a .a2 .mail a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+
 footer .footer-a .a2 .socialss .socials-1,
-footer .footer-a .a2 .socialss .socials-2,
-footer .footer-a .a2 .socialss .socials-3 {
+footer .footer-a .a2 .socialss .socials-2 {
     display: flex;
     flex-direction: column;
     line-height: 1.4;
@@ -97,6 +100,11 @@ footer .footer-b {
     justify-content: center;
     background-color: #fff;
     padding: 20px;
+}
+
+footer .footer-c {
+    font-size: 14px;
+
 }
 
 /* responsive for tablet mode */
@@ -139,8 +147,15 @@ footer .footer-b {
     }
 
     footer .footer-c {
+        width: 90%;
         letter-spacing: 2px;
         text-align: center;
+    }
+
+    footer .footer-a .a2 .socialss .socials-1,
+    footer .footer-a .a2 .socialss .socials-2,
+    footer .footer-a .a2 .socialss .socials-3 {
+        font-size: 12px;
     }
 }
 

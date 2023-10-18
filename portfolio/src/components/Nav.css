@@ -26,7 +26,7 @@ nav .nav-holder-1 {
     gap: 10px;
     width: 110px;
     overflow: hidden;
-    height: 83px;
+    height: 55px;
 }
 
 nav .nav-holder-1 .logos {
@@ -123,7 +123,7 @@ nav .main-nav .container ul li:hover {
     justify-content: start;
     gap: 30px;
     color: #fff;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 50px;
 }
@@ -176,7 +176,7 @@ nav .main-nav {
     justify-content: end;
     width: 70%;
     gap: 50px;
-    font-size: 13px;
+    font-size: 12px;
     text-transform: uppercase;
 }
 

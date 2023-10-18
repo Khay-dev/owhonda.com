@@ -37,7 +37,7 @@ const Work = () => {
             id: crypto.randomUUID(),
             className: "C",
             location: "/Work3",
-            animation: "fade-right",
+            animation: "zoom-in-right",
             duration: 1500,
         },
         {
@@ -57,7 +57,7 @@ const Work = () => {
             id: crypto.randomUUID(),
             className: "E",
             location: "/Work5",
-            animation: "fade-right",
+            animation: "zoom-in-left",
             duration: 3000,
         },
         {
@@ -90,7 +90,7 @@ const Work = () => {
             <div className="work-hero">
                 <Nav />
             </div>
-            <div className="section-1-work">
+            <div className="section-1-work1">
                 {works.map((work) => (
                     <Link
                         to={work.location}

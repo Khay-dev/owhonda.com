@@ -12,6 +12,11 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+import Image2 from "../img/gym.jpg";
+import Image3 from "../img/cook.jpg";
+import Image4 from "../img/karate.jpg";
+import Image5 from "../img/music.jpg";
+
 const About = () => {
     useEffect(() => {
         AOS.init();
@@ -26,30 +31,32 @@ const About = () => {
                         data-aos-easing="linear"
                         data-aos-duration="1200"
                     >
-                        EXPLORE THE CREATOR{" "}
+                        EXPLORE THE CREATOR
                     </span>
                 </div>
             </div>
             <section className="section-about-1">
                 <div className="section-a">
                     <div>
-                        Lorem ipsum dolor sit amet,elit elit elit Accusamu
-                        Lorem, ipsum dolor.
+                        <span> USER-CENTRIC</span> CREATIVE DESIGNER
                     </div>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Atque pariatur porro veniam soluta magni totam quae
-                        mollitia itaque Lorem ipsum dolor sit amet. Lorem ipsum
-                        dolor sit amet elit. natus Lorem ipsum dolor sit amet
-                        elit. Fuga velit eius totam illo non eos esse sunt
-                        aliquid.
+                        I am a creative designer with a wealth of experience
+                        spanning various domains, including website development,
+                        brand identity design, and <span>UI/UX</span>. Over the
+                        course of my diverse career Whether I am working
+                        collaboratively with a team or independently, my
+                        approach consistently centers on the user. Originally a
+                        Nigerian, I currently reside in the UK, where I am
+                        pursuing a masters degree in cybersecurity in the
+                        University of Wolverhampton.
                     </p>
                 </div>
                 <div className="section-b">
                     <img
                         src={Image1}
                         alt=""
-                        data-aos="fade-left"
+                        data-aos="zoom-in-left"
                         data-aos-duration="1200"
                     />
                 </div>
@@ -123,16 +130,25 @@ const About = () => {
                     >
                         <SwiperSlide>
                             <div className="main-swiper">
-                                <div className="a"></div>
+                                <div className="a">
+                                    <img src={Image2} alt="" />
+                                </div>
                                 <div className="b">
-                                    <h2>GYM</h2>
+                                    <h2>FITNESS</h2>
                                     <p>
-                                        Lorem ipsum dolor, sit amet consectetur
-                                        adipisicing elit. Nobis animi dolores
-                                        qui quam eos numquam neque ullam
-                                        similique, beatae temporibus maxime sit
-                                        labore dicta quis, eaque exercitationem
-                                        perferendis, atque accusamus.
+                                        Fitness is a cornerstone of my daily
+                                        life, an unwavering commitment to
+                                        maintaining a healthy, active lifestyle
+                                        that goes far beyond the realm of
+                                        <span> UI/UX </span>
+                                        design. It is about pushing my physical
+                                        boundaries, whether I am lacing up my
+                                        running shoes for an invigorating
+                                        morning jog or tackling a high volume
+                                        lifting session. I am fueled by the
+                                        desire to be the best version of myself,
+                                        and my fitness routine plays a pivotal
+                                        role in achieving that goal.
                                     </p>
                                 </div>
                             </div>
@@ -140,32 +156,47 @@ const About = () => {
                         <SwiperSlide>
                             {" "}
                             <div className="main-swiper">
-                                <div className="a"></div>
+                                <div className="a">
+                                    {" "}
+                                    <img src={Image3} alt="" />
+                                </div>
                                 <div className="b">
                                     <h2>COOKING</h2>
                                     <p>
-                                        Lorem ipsum dolor, sit amet consectetur
-                                        adipisicing elit. Nobis animi dolores
-                                        qui quam eos numquam neque ullam
-                                        similique, beatae temporibus maxime sit
-                                        labore dicta quis, eaque exercitationem
-                                        perferendis, atque accusamus.
+                                        Sunday Therapy, our cherished weekly
+                                        tradition, is all about bonding through
+                                        cooking. With my three kids, we don chef
+                                        hats and aprons on Sundays, transforming
+                                        our kitchen into a creative hub. We
+                                        experiment with flavors, create
+                                        delicious dishes, and share plenty of
+                                        laughter. These moments are more than
+                                        just meals; they are a treasure trove of
+                                        memories, strengthening the family bonds
+                                        that mean the world to me.
                                     </p>
                                 </div>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className="main-swiper">
-                                <div className="a"></div>
+                                <div className="a">
+                                    {" "}
+                                    <img src={Image4} alt="" />
+                                </div>
                                 <div className="b">
                                     <h2>KARATE</h2>
                                     <p>
-                                        Lorem ipsum dolor, sit amet consectetur
-                                        adipisicing elit. Nobis animi dolores
-                                        qui quam eos numquam neque ullam
-                                        similique, beatae temporibus maxime sit
-                                        labore dicta quis, eaque exercitationem
-                                        perferendis, atque accusamus.
+                                        When I step out of the design world, I
+                                        embrace the discipline and artistry of
+                                        karate. This martial art is more than
+                                        just a hobby for me; it is a passion
+                                        that I have devoted countless hours to
+                                        perfecting. Karate embodies both self
+                                        discipline and the art of self defense,
+                                        providing a profound sense of balance in
+                                        my life. I am currently a blue belt in
+                                        Shotokan karate
                                     </p>
                                 </div>
                             </div>
@@ -173,16 +204,27 @@ const About = () => {
                         <SwiperSlide>
                             {" "}
                             <div className="main-swiper">
-                                <div className="a"></div>
+                                <div className="a">
+                                    {" "}
+                                    <img src={Image5} alt="" />
+                                </div>
                                 <div className="b">
                                     <h2>MUSIC</h2>
                                     <p>
-                                        Lorem ipsum dolor, sit amet consectetur
-                                        adipisicing elit. Nobis animi dolores
-                                        qui quam eos numquam neque ullam
-                                        similique, beatae temporibus maxime sit
-                                        labore dicta quis, eaque exercitationem
-                                        perferendis, atque accusamus.
+                                        Music is where my soul finds solace and
+                                        inspiration. I am an ardent listener,
+                                        with a penchant for the diverse genres
+                                        of jazz, indie folk, hip hop, RnB, and
+                                        alternative rock. Whether it is the
+                                        smooth melodies of jazz, the soulful
+                                        rhythms of RnB, the storytelling in
+                                        folk, the beats of hip hop, or the
+                                        energy of alternative rock, music allows
+                                        me to unwind and recharge, offering me a
+                                        means to step away from the digital
+                                        world and return to my design work with
+                                        renewed vigor and inspiration. Checkout
+                                        my 2023 work playlist.
                                     </p>
                                 </div>
                             </div>

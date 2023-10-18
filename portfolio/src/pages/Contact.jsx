@@ -30,14 +30,6 @@ const Contact = () => {
                             <span>Behance</span>
                         </a>
                     </div>
-                    <div className="section-4">
-                        <a href="#">
-                            <span>Instagram</span>
-                        </a>
-                        <a href="#">
-                            <span>Twitter</span>
-                        </a>
-                    </div>
                 </div>
             </section>
         </div>

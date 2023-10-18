@@ -24,11 +24,11 @@ function App() {
                 <Route path="/Contact" element={<Contact />} />
                 <Route path="/Work" element={<Work />} />
                 <Route path="/Work1" element={<WorkA />} />
-                <Route path="/Work2" element={<WorkB />} />{" "}
-                <Route path="/Work3" element={<WorkC />} />{" "}
-                <Route path="/Work4" element={<WorkD />} />{" "}
-                <Route path="/Work5" element={<WorkE />} />{" "}
-                <Route path="/Work6" element={<WorkF />} />{" "}
+                <Route path="/Work2" element={<WorkB />} />
+                <Route path="/Work3" element={<WorkC />} />
+                <Route path="/Work4" element={<WorkD />} />
+                <Route path="/Work5" element={<WorkE />} />
+                <Route path="/Work6" element={<WorkF />} />
                 <Route path="/Work7" element={<WorkG />} />
             </Routes>
         </Router>

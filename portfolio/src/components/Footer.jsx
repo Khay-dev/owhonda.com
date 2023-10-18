@@ -16,29 +16,17 @@ const Footer = () => {
                         <div className="socialss">
                             <div className="socials-1">
                                 <div className="social-1 socials">
-                                    <a href="#">
-                                        <span>Instagram</span>
+                                    <a href="behance.net/owhonda">
+                                        <span>Behance</span>
                                     </a>
                                 </div>
                                 <div className="social-2 socials">
-                                    <a href="#">
+                                    <a href="linkedin.com/in/owhondanwokekoro">
                                         <span>LinkedIn</span>
                                     </a>
                                 </div>
                             </div>
-                            <div className="socials-2">
-                                <div className="social-3 socials">
-                                    <a href="#">
-                                        <span>Behance</span>
-                                    </a>
-                                </div>
-                                <div className="social-4 socials">
-                                    <a href="#">
-                                        <span>Twitter</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div className="social-5 socials-3">
+                            <div className="social-5 socials-2">
                                 <span>Birmingham </span>
                                 <span>United Kingdom</span>
                             </div>
