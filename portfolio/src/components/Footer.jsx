@@ -11,17 +11,23 @@ const Footer = () => {
                     <div className="a2">
                         <div className="mail">
                             <p>Say Hello</p>
-                            <a href="mailto:XXXXX">me@owhonda.com</a>
+                            <a href="mailto:me@owhonda.com">me@owhonda.com</a>
                         </div>
                         <div className="socialss">
                             <div className="socials-1">
                                 <div className="social-1 socials">
-                                    <a href="behance.net/owhonda">
+                                    <a
+                                        href="https://behance.net/owhonda"
+                                        target="blank"
+                                    >
                                         <span>Behance</span>
                                     </a>
                                 </div>
                                 <div className="social-2 socials">
-                                    <a href="linkedin.com/in/owhondanwokekoro">
+                                    <a
+                                        target="blank"
+                                        href="https://www.linkedin.com/in/owhondanwokekoro"
+                                    >
                                         <span>LinkedIn</span>
                                     </a>
                                 </div>

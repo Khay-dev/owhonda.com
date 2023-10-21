@@ -131,4 +131,12 @@
         place-items: center;
     }
 
+    .section-contact .socials .section-2 {
+        align-items: start;
+    }
+
+    .section-contact .socials .section-3 {
+        align-items: end;
+    }
+
 }

@@ -106,7 +106,11 @@ const Nav = () => {
                                 </li>
                             </Link>
 
-                            <a href="www.linkedin.com" className="link">
+                            <a
+                                target="blank"
+                                href="https://www.linkedin.com/in/owhondanwokekoro"
+                                className="link"
+                            >
                                 {" "}
                                 <li>LinkedIn</li>
                                 <div>
@@ -173,7 +177,12 @@ const Nav = () => {
                         padding: "9px 14px ",
                     }}
                 >
-                    <a href="www.linkedin.com">LinkedIn</a>
+                    <a
+                        target="blank"
+                        href="https://www.linkedin.com/in/owhondanwokekoro"
+                    >
+                        LinkedIn
+                    </a>
                     <div
                         className={`nav-holder-3 ${isOpen ? "is-active" : ""}`}
                         onClick={toggleNavbar}

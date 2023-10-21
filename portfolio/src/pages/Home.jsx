@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import image2 from "../img/brand2.jpg";
 import image3 from "../img/brand3.jpg";
 
+
 import { BsArrowUpRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";

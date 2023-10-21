@@ -23,10 +23,13 @@ const Contact = () => {
                         <span>United Kingdom</span>
                     </div>
                     <div className="section-3">
-                        <a href="#">
+                        <a
+                            target="blank"
+                            href="https://www.linkedin.com/in/owhondanwokekoro"
+                        >
                             <span>LinkedIn</span>
                         </a>
-                        <a href="#">
+                        <a target="blank" href="https://behance.net/owhonda">
                             <span>Behance</span>
                         </a>
                     </div>
